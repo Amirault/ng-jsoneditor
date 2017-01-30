@@ -60,7 +60,7 @@
                         if (newValue.hasOwnProperty(k)) {
                             var v = newValue[k];
 
-                            if (newValue[k] !== oldValue[k]) {
+                            if (k !== 'completer' && newValue[k] !== oldValue[k]) {
                                 if (k === 'mode') {
                                     editor.setMode(v);
                                 } else if (k === 'name') {
